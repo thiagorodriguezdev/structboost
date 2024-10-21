@@ -1,0 +1,52 @@
+@import url(reset.css);
+@import url(typograph.css);
+@import url(variables.css);
+
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.btn-primary {
+  padding: 1.6rem 2.4rem;
+  background-color: var(--color-pink-10);
+  color: var(--color-gray-900);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+}
+
+.btn-primary.lg {
+  padding-block: 2.3rem;
+  padding-inline: 2.4rem;
+  letter-spacing: -0.054rem;
+  font-size: 1.8rem;
+}
+
+.btn-primary.white {
+  background-color: var(--color-gray-100);
+}
+
+.s-digital {
+  width: 100%;
+  max-width: 38.4rem;
+}
+
+.s-digital .digital-text {
+  max-width: 27.4rem;
+}
+
+.s-digital .digital-text h6 {
+  color: var(--color-gray-100);
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.066rem;
+}
+
+.s-digital .digital-text p {
+  color: var(--color-gray-600);
+  letter-spacing: -0.54px;
+}
