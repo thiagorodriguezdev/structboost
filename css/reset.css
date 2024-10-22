@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  font-family: "Inter", sans-serif;
   color: var(--color-gray-100);
 }
 

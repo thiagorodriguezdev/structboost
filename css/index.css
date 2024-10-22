@@ -1,52 +1,74 @@
 @import url(reset.css);
+@import url(grid.css);
 @import url(typograph.css);
 @import url(variables.css);
+@import url(components.css);
+@import url(header.css);
 
-.container {
+.s-hero {
   width: 100%;
-  max-width: 124.6rem;
-  margin: 0 auto;
-  padding-inline: 1.5rem;
+  margin-top: 11.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.btn-primary {
-  padding: 1.6rem 2.4rem;
+.s-hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 22rem;
   background-color: var(--color-pink-10);
-  color: var(--color-gray-900);
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 100%;
-  letter-spacing: -0.48px;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: -1;
 }
 
-.btn-primary.lg {
-  padding-block: 2.3rem;
-  padding-inline: 2.4rem;
-  letter-spacing: -0.054rem;
-  font-size: 1.8rem;
-}
-
-.btn-primary.white {
-  background-color: var(--color-gray-100);
-}
-
-.s-digital {
+.s-hero .s-hero_title {
   width: 100%;
-  max-width: 38.4rem;
+  max-width: 71.9rem;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 6.4rem;
 }
 
-.s-digital .digital-text {
-  max-width: 27.4rem;
-}
-
-.s-digital .digital-text h6 {
+.s-hero .s-hero_title h1 {
   color: var(--color-gray-100);
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: -0.066rem;
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.168rem;
+  margin-bottom: 2.4rem;
+  position: relative;
 }
 
-.s-digital .digital-text p {
-  color: var(--color-gray-600);
-  letter-spacing: -0.54px;
+.s-hero .s-hero_title h1::before {
+  content: "";
+  position: absolute;
+  background: url(../img/detalhe.svg) no-repeat center center;
+  width: 100%;
+  max-width: 59.9rem;
+  height: 2.2rem;
+  left: 3.9rem;
+  top: 11.8rem;
+  z-index: -1;
+}
+
+.s-hero .s-hero_title p {
+  max-width: 55.6rem;
+  margin: 0 auto;
+  color: var(--color-gray-300);
+  font-size: 1.8rem;
+  letter-spacing: -0.054rem;
+  margin-bottom: 3.2rem;
+}
+
+.s-hero .s-hero_title .arrow-button {
+  position: absolute;
+  bottom: 1.7rem;
+  left: 5.5rem;
+}
+
+.s-hero .s-hero_image {
+  padding: 0 1.5rem;
 }
