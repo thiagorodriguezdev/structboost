@@ -6,12 +6,12 @@
 @import url(header.css);
 
 .s-hero {
+  margin-top: 11.3rem;
   width: 100%;
-  margin-top: 11.5rem;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .s-hero::after {
@@ -20,29 +20,28 @@
   width: 100%;
   height: 22rem;
   background-color: var(--color-pink-10);
-  bottom: 0rem;
   left: 0rem;
+  bottom: 0rem;
   z-index: -1;
 }
 
-.s-hero .s-hero_title {
+.s-hero .text {
   width: 100%;
   max-width: 71.9rem;
-  text-align: center;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 6.4rem;
+  text-align: center;
 }
 
-.s-hero .s-hero_title h1 {
+.s-hero .text h1 {
   color: var(--color-gray-100);
   font-family: "Sora", sans-serif;
+  font-size: 5.6rem;
   letter-spacing: -0.168rem;
-  margin-bottom: 2.4rem;
   position: relative;
 }
 
-.s-hero .s-hero_title h1::before {
+.s-hero .text h1::before {
   content: "";
   position: absolute;
   background: url(../img/detalhe.svg) no-repeat center center;
@@ -54,21 +53,45 @@
   z-index: -1;
 }
 
-.s-hero .s-hero_title p {
+.s-hero .text p {
+  width: 100%;
   max-width: 55.6rem;
-  margin: 0 auto;
   color: var(--color-gray-300);
   font-size: 1.8rem;
   letter-spacing: -0.054rem;
-  margin-bottom: 3.2rem;
+  margin: 2.4rem auto 3.2rem;
 }
 
-.s-hero .s-hero_title .arrow-button {
+.s-hero .text .arrow-button {
   position: absolute;
-  bottom: 1.7rem;
+  bottom: 1.8rem;
   left: 5.5rem;
 }
 
-.s-hero .s-hero_image {
+.s-hero .ilustra {
+  margin-top: 6.4rem;
   padding: 0 1.5rem;
+}
+
+.s-digital {
+  margin-top: 12.8rem;
+  width: 100%;
+}
+
+.s-digital h3 {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 53.5rem;
+  color: var(--color-gray-100);
+  font-family: "Sora", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.12rem;
+  margin-bottom: 6.4rem;
+}
+
+.s-digital .card-digital {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-gray-800);
+  padding-bottom: 13rem;
 }
