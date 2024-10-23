@@ -60,7 +60,7 @@
   background-color: rgba(255, 255, 255, 0.02);
 }
 
-.card .card__tag {
+.card .card-tag {
   display: inline-block;
   padding: 0.8rem 2.2rem;
   border-radius: 10rem;
@@ -75,7 +75,7 @@
   margin-bottom: 4.5rem;
 }
 
-.card .card__image {
+.card .card-image {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -83,17 +83,17 @@
   margin-bottom: 6.4rem;
 }
 
-.card .card__text {
+.card .card-text {
   width: 100%;
   max-width: 48.2rem;
 }
 
-.card .card__text h6 {
+.card .card-text h6 {
   margin-bottom: .8rem;
   letter-spacing: -0.66px;
 }
 
-.card .card__text p {
+.card .card-text p {
   color: var(--color-gray-600);
   font-size: 1.6rem; 
   letter-spacing: -0.048rem;
