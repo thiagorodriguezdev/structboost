@@ -34,7 +34,7 @@
   max-width: 38.4rem;
 }
 
-.item__digital .item__digital-icon {
+.item-digital .item-digital-icon {
   width: 4rem;
   height: 4rem;
   display: flex;
@@ -44,12 +44,12 @@
 }
 
 
-.item__digital .item__digital-info h6 {
+.item-digital .item-digital-info h6 {
   letter-spacing: -0.066rem;
   margin-bottom: .8rem;
 }
 
-.item__digital .item__digital-info p {
+.item-digital .item-digital-info p {
   color: var(--color-gray-600);
   letter-spacing: -0.054rem;
 }
