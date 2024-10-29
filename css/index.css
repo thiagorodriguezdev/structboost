@@ -5,6 +5,7 @@
 @import url(components.css);
 @import url(header.css);
 
+/* INICIO HEADER */
 .header {
   width: 100%;
   height: 8.8rem;
@@ -45,7 +46,9 @@
 .header .menu ul li a:hover {
   opacity: 0.7;
 }
+/* FIM HEADER */
 
+/* INICIO S-HERO */
 .s-hero {
   padding-top: 11.3rem;
   width: 100%;
@@ -114,10 +117,14 @@
   padding: 0 1.5rem;
 }
 
+.s-hero .ilustra-mobile {
+  display: none;
+}
+/* FIM S-HERO */
+
+/* INCIO S-DIGITAL */
 .s-digital {
   padding-top: 12.8rem;
-  width: 100%;
-  display: none;
 }
 
 .s-digital h3 {
@@ -125,10 +132,8 @@
   margin: 0 auto;
   max-width: 53.5rem;
   color: var(--color-gray-100);
-  font-family: "Sora", sans-serif;
-  font-size: 4rem;
   letter-spacing: -0.12rem;
-  margin-bottom: 6.4rem;
+  padding-bottom: 6.4rem;
 }
 
 .s-digital ul {
@@ -137,7 +142,9 @@
   border-bottom: 1px solid var(--color-gray-800);
   padding-bottom: 12.8rem;
 }
+/* FIM S-DIGITAL */
 
+/* INICIO S-ART-FRONTEND */
 .s-art-frontend {
   padding-top: 12.8rem;
   width: 100%;
@@ -188,7 +195,9 @@
 .all .card:first-child {
   grid-column: span 2;
 }
+/* FIM S-ART-FRONTEND */
 
+/* INCIO NEWSLATTER */
 .newslatter {
   text-align: center;
   background-color: var(--color-pink-10);
@@ -212,7 +221,9 @@
   max-width: 68.7rem;
   margin: 0 auto 2.4rem;
 }
+/* FIM NEWSLATTER */
 
+/* INICIO FOOTER */
 .footer {
   display: none;
   padding: 4.8rem 0;
@@ -279,13 +290,33 @@
   font-weight: 700;
 }
 
+/* FIM FOOTER */
+
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-top: 8rem;
+  }
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 8rem;
+  }
+  .item-digital .item-digital-info p {
+    font-size: 1.6rem;
+  }
+  .item-digital .item-digital-info h6 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 991px) {
   .s-hero::after {
     height: 13rem;
   }
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -300,9 +331,26 @@
     padding-top: 6rem;
   }
 
-  /* .s-hero .text h1 {
-    max-width: 490px;
-    margin: 0 auto; */
+  .s-hero .text h1 {
+    max-width: 49rem;
+    margin: 0 auto;
+    font-size: 5.2rem;
+  }
+
+  .s-hero .text h1::before {
+    background-size: 100%;
+    left: 0;
+    bottom: -0.4rem;
+  }
+
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+
+  .s-hero .text .arrow-button {
+    bottom: 2.8rem;
+    left: 2rem;
+    max-width: 6rem;
   }
 }
 
@@ -312,5 +360,32 @@
   }
   .header .logo {
     max-width: 16rem;
+  }
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+  .s-hero .text h1::before {
+    bottom: -0.6rem;
+  }
+  .s-hero .text p {
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .s-hero .text .arrow-button {
+    display: none;
+  }
+  .s-hero .ilustra {
+    display: none;
+  }
+  .s-hero .ilustra-mobile {
+    padding-top: 8.8rem;
+    display: block;
+  }
+  .s-hero::after {
+    height: 22rem;
   }
 }
