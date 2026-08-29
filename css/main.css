@@ -124,6 +124,53 @@ header nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-800);
-  padding-bottom: 128px;
+  padding-bottom: 12.8rem;
 }
 /* FIM SECTION DIGITAL */
+
+.section-domine-frontend {
+  padding-top: 12.8rem;
+}
+
+.section-domine-frontend .domine-frontend-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6.4rem;
+}
+
+.domine-frontend-text .text-left {
+  width: 100%;
+  max-width: 53.9rem;
+}
+
+.domine-frontend-text .text-left h3 {
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  padding-bottom: 1.6rem;
+}
+
+.domine-frontend-text .text-left p {
+  width: 100%;
+  max-width: 45.2rem;
+  color: var(--gray-600);
+  letter-spacing: -0.54px;
+}
+
+.domine-frontend-text > p:last-of-type {
+  width: 100%;
+  max-width: 42.9rem;
+  color: var(--gray-600);
+  letter-spacing: -0.54px;
+}
+
+.section-domine-frontend .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 12.8rem;
+}
+
+.section-domine-frontend .grid > .card-grande {
+  grid-column: 1 / 3;
+}
