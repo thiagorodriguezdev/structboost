@@ -100,5 +100,30 @@ header nav ul li a:hover {
 }
 
 .section-hero .ilustra {
+  padding: 0 1.5rem;
   padding-top: 6.4rem;
 }
+/* FIM SECTION HERO */
+
+/* INICIO SECTION DIGITAL */
+.section-digital {
+  padding-top: 12.8rem;
+}
+
+.section-digital h3 {
+  width: 100%;
+  max-width: 53.5rem;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: -1.2px;
+  font-weight: 600;
+  margin-bottom: 6.4rem;
+}
+
+.section-digital ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-800);
+  padding-bottom: 128px;
+}
+/* FIM SECTION DIGITAL */
